@@ -5,7 +5,7 @@
  * invertirNumero(67) //Devuelve 76
  */
 
-
+//Divisiones sucesivas entre 10, ir guardando el número.
 function changeNumber(number) { 
 
     
