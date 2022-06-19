@@ -7,7 +7,13 @@
 
 //Divisiones sucesivas entre 10, ir guardando el número.
 function changeNumber(number) { 
-
-    
+    let invertido = parseInt(
+        number
+            .toString()
+            .split('')
+            .reverse()
+            .join('')) * Math.sign(number);
+    //console.log(invertido + "Type: " + typeof invertido);
+    return invertido; 
 }
-changeNumber(345);
+console.log("The number changed is : " + changeNumber(-123345));
